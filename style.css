@@ -1,0 +1,88 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0a0a0d;
+    color: white;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.level {
+    background-color: rgb(32, 34, 34);
+    border: solid black 2px;
+    margin-top: 10px;
+    padding: 20px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    width: 40vw;
+    height: 100px
+}
+
+#topbar {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 2.em;
+    font-weight: bold;
+    background-color: rgb(23, 21, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topbar h3 {
+    /*transform: translateY(-50px);*/
+}
+
+.centeralign {
+    text-align: center;
+}
+
+#leaderboardToggle {
+    transform: translateX(30px);
+    width: 35px;
+    height: 35px;
+    background-image: url(res/img/menu.svg);
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+#leaderboardToggle:hover {
+    background-color: rgba(240, 248, 255, 0.139);
+    border-radius: 5px;
+}
+
+#topbarInner {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topbarInner h3 {
+    transform: translateX(-30px);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+#topbarInner h3:hover {
+    background-color: rgba(240, 248, 255, 0.139);
+    border-radius: 5px;
+}
