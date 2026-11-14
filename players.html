@@ -12,9 +12,19 @@
     <div id="topbar">
         <div id="topbarInner">
             <h3 id="sarkdemtitle">SARK Demonlist</h3>
-            <a href="index.html">
-                <button id="leaderboardToggle" title="Leaderboard"></button>
-            </a>
+            <button id="leaderboardToggle" type="button" title="Leaderboard" aria-expanded="false"
+                aria-controls="dropdown-leaderboard"></button>
+            <div id="dropdown-leaderboard" hidden>
+                <div>
+                    <a href="index.html">Levels List</a>
+                </div>
+                <div>
+                    <a href="players.html">Players List</a>
+                </div>
+                <div>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
         </div>
     </div>
     <h1>heres the most accurate ranking from the SARK demonlist</h1>
@@ -24,8 +34,6 @@
     <br>
 
     <main>
-        <h3>players:</h3>
-
         <hr>
         <h2>
             <div id="playersDiv">
