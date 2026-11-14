@@ -1,4 +1,11 @@
 const playerContainer = document.getElementById("playersDiv");
+const leaderboardToggle = document.getElementById("leaderboardToggle");
+const dropdownLeaderboard = document.getElementById("dropdown-leaderboard");
+
+leaderboardToggle.addEventListener("click", () => {
+    dropdownLeaderboard.hidden = !dropdownLeaderboard.hidden;
+    leaderboardToggle.setAttribute("aria-expanded", String(!dropdownLeaderboard.hidden));
+});
 
 fetch("res/players.json")
     .then(response => response.json())
